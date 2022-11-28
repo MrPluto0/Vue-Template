@@ -8,13 +8,8 @@
     "format": "prettier --write ./**/*.{vue,ts,tsx,js,jsx,css,less,scss,json,md}",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx --fix",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "dependencies": {
     "ant-design-vue": "^3.2.15",
@@ -28,7 +23,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-vue": "^9.8.0",
-    "husky": "^8.0.2",
+    "husky": "^8.0.0",
     "prettier": "^2.8.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3",
