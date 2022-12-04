@@ -1,5 +1,13 @@
-# Vite + Vue + TS
+# Vue Template
 
-# Eslint + Prettier
+This project is aimed to create vue frontend projects quickly and completely. It supports above modules.
 
-# Husky
+- [x] Vue3
+- [x] Vite
+- [x] Typescript
+- [x] Jest
+- [x] Axios
+- [x] Eslint
+- [x] Prettier
+- [x] Husky
+- [x] Less
