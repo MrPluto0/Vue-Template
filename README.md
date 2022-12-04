@@ -1,6 +1,6 @@
 # Vue Template
 
-This project is aimed to create vue frontend projects quickly and completely. It supports above modules.
+This project is aimed to create vue frontend projects quickly and completely. It supports the following modules.
 
 - [x] Vue3
 - [x] Vite
