@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>This is Home Page</div>
+    <div class="content">This is Home Page</div>
     <HelloWorld />
   </div>
 </template>
@@ -9,4 +9,8 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 </script>
 
-<style scoped lang="less"></style>
+<style scoped lang="less">
+.content {
+  color: @main-color;
+}
+</style>

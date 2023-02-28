@@ -1,18 +1,9 @@
 <template>
-  <div>
-    <div class="header">Header</div>
-    <router-view v-slot="{ Component }">
-      <keep-alive>
-        <component :is="Component" :key="$route.name" />
-      </keep-alive>
-    </router-view>
-  </div>
+  <Layout>
+    <router-view />
+  </Layout>
 </template>
 
-<script setup lang="ts"></script>
-
-<style scoped lang="less">
-.header {
-  color: @main-color;
-}
-</style>
+<script setup lang="ts">
+import Layout from "@/layout/index.vue";
+</script>
