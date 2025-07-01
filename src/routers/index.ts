@@ -1,29 +1,11 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
+import routes from "~pages";
 
-type IRoute = RouteRecordRaw & {
-  meta?: {
-    title?: string;
-    icon?: string;
-    keepAlive?: boolean;
-  };
-};
-
-const routes: IRoute[] = [
-  {
-    path: "/",
-    redirect: "/home",
-  },
-  {
-    path: "/home",
-    component: () => import("@/pages/Home.vue"),
-  },
-];
+console.log("Routes:", routes);
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
 });
-
-export { routes };
 
 export default router;

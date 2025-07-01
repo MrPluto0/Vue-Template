@@ -1,4 +1,4 @@
-import _ from "lodash";
+import * as _ from "lodash-es";
 
 function isObject(obj: any) {
   return Object.prototype.toString.call(obj) === "[object Object]";

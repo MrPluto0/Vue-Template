@@ -3,6 +3,7 @@ import { createPinia } from "pinia";
 import App from "./App.vue";
 import router from "./routers";
 import "./styles/global.less";
+import "virtual:uno.css";
 
 const store = createPinia();
 const app = createApp(App);
